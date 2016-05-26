@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('master')
+@section('title', 'About')
 
-        <link rel="stylesheet" type="text/css" href="{!! asset('css/bootstrap.min.css') !!}" >
-        <link rel="stylesheet" href="{!! asset('css/bootstrap-theme.min.css') !!}">
-
-        <link rel="stylesheet" type="text/css" href="{!! asset('app.css') !!}" >
-
-        <script src="{!! asset('js/bootstrap.min.js') !!}"></script>
-        <script src="{!! asset('js/jquery-1.11.3.min.js') !!}"></script>
-
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-                <div class="quote">About Page!</div> 
-            </div>
+@section('content')
+    <div class="container">
+        <div class="content">
+            <div class="title">About Page</div>
+            <div class="quote">Our About page!</div>
         </div>
-    </body>
-</html>
+    </div>
+@endsection

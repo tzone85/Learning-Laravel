@@ -1,23 +1,27 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Home Page</title>
+@extends('master')
+@section('title', 'Home')
 
-        <link rel="stylesheet" type="text/css" href="{!! asset('css/bootstrap.min.css') !!}" >
-        <link rel="stylesheet" href="{!! asset('css/bootstrap-theme.min.css') !!}">
+@section('content')
+    <div class="container">
 
-        <link rel="stylesheet" type="text/css" href="{!! asset('app.css') !!}" >
+        <div class="row banner">
+            <div class="col-md-12">
+                <h1 class="text-center margin-top-100 editContent">
+                    Learning Laravel 5
+                </h1>
 
-        <script src="{!! asset('js/bootstrap.min.js') !!}"></script>
-        <script src="{!! asset('js/jquery-1.11.3.min.js') !!}"></script>
+                <h3 class="text-center margin-top-100 editContent">Building Practical Applications</h3>
 
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Home Page</div>
-                <div class="quote">Our home page!</div> 
+                <div class="text-center">
+                    <img src="http://learninglaravel.net/img/LearningLaravel5_cover0.png" width="302" height="391" alt="">
+                </div>
             </div>
         </div>
-    </body>
-</html>
+
+        <!-- <div class="content">
+            <div class="title">Home Page</div>
+            <div class="quote">Our Home page!</div>
+        </div> -->
+
+    </div>
+@endsection

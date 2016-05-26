@@ -13,6 +13,7 @@
 
 Route::get('/', 'PagesController@home');
 
-Route::get('/contact','PagesController@contact');
+// Route::get('/contact','PagesController@contact');
+Route::get('/contact','TicketsController@create');
 
 Route::get('/about', 'PagesController@about');
